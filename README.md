@@ -12,9 +12,8 @@ In your `pubspec.yaml`:
 dependencies:
   layout_provider:
     git:
-      url: https://github.com/chinkysight/packages/layout_provider.git
+      url: https://github.com/chinkysight/layout_provider
       ref: v0.0.1
-      path: layout_provider
 ```
 
 For more information on package dependencies, <https://dart.dev/tools/pub/dependencies>
