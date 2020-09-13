@@ -13,7 +13,7 @@ dependencies:
   layout_provider:
     git:
       url: https://github.com/chinkysight/layout_provider
-      ref: v0.0.1
+      ref: v1.0
 ```
 
 For more information on package dependencies, <https://dart.dev/tools/pub/dependencies>
