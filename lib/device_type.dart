@@ -1,7 +1,0 @@
-
-
-enum DeviceType { mobile, tablet }
-
-
-
-

@@ -1,0 +1,1 @@
+enum Device{Mobile, Tablet}
