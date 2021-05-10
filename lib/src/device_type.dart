@@ -15,17 +15,17 @@ class DeviceType extends StatefulWidget {
 }
 
 class _DeviceTypeState extends State<DeviceType> {
-  late final double mediaqueryShortestSide;
+  late  double deviceShortestSide;
 
   @override
-  void initState() {
-    super.initState();
-    mediaqueryShortestSide = MediaQuery.of(context).size.shortestSide;
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+    deviceShortestSide = MediaQuery.of(context).size.shortestSide;
   }
 
   @override
   Widget build(BuildContext context) {
-    if (mediaqueryShortestSide < widget.breakpointForTablet) {
+    if (deviceShortestSide < widget.breakpointForTablet) {
       return widget.builder(Device.Mobile);
     }
     return widget.builder(Device.Tablet);

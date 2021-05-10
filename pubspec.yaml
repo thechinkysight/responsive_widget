@@ -1,6 +1,6 @@
-name: layout_provider
-description: A wrapper for your UI which is smart enough to change the UI based on the device type and orientation.
-version: 0.0.1
+name: responsive_widget
+description: A wrapper for your views which is responsible for maintaining the responsiveness across mobile and tablet. 
+version: 2.0.0
 author: Chinky Sight <chinkysight@gmail.com>
 homepage: https://github.com/chinkysight/packages/layout_provider
 
