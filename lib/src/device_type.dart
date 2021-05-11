@@ -3,11 +3,14 @@ import '../utils/device_enums.dart';
 
 class DeviceType extends StatefulWidget {
   final Widget Function(Device device) builder;
-
   final double breakpointForTablet;
+  final double? deviceShortestSide;
 
   const DeviceType(
-      {Key? key, required this.builder, this.breakpointForTablet = 600.0})
+      {Key? key,
+      required this.builder,
+      required this.breakpointForTablet,
+      this.deviceShortestSide})
       : super(key: key);
 
   @override
@@ -15,12 +18,13 @@ class DeviceType extends StatefulWidget {
 }
 
 class _DeviceTypeState extends State<DeviceType> {
-  late  double deviceShortestSide;
+  late double deviceShortestSide;
 
   @override
   void didChangeDependencies() {
     super.didChangeDependencies();
-    deviceShortestSide = MediaQuery.of(context).size.shortestSide;
+    deviceShortestSide =
+        widget.deviceShortestSide ?? MediaQuery.of(context).size.shortestSide;
   }
 
   @override
