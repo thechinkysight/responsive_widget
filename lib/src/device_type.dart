@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import '../utils/device_enums.dart';
+import './utils/device_enums.dart';
+
 
 class DeviceType extends StatefulWidget {
   final Widget Function(Device device) builder;

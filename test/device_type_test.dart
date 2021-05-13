@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:responsive_widget/src/device_type.dart';
-import 'package:responsive_widget/utils/device_enums.dart';
+import 'package:responsive_widget/src/utils/device_enums.dart';
 
 void main() {
   Widget app(
